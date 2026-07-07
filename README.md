@@ -5,7 +5,7 @@
 
 ## About this Repository
 
-This repository contains the documentation, research materials, and outputs for the RCM CRM project, developed by the [RCM Cooperative](http://rcmcooperative.com/).
+This repository contains the documentation, research materials, and outputs for the **RCM-CRM project**, developed by the [RCM Cooperative](http://rcmcooperative.com/).
 
 This project follows open research principles to deliver FAIR and openly licensed materials. 
 Publication of these materials supports transparency in this project, and reproducibility of similar work. 
@@ -26,7 +26,7 @@ This is useful where there are restrictions on sharing some information (GDPR) o
 
 ## About
 
-The RCM CRM is a self-hosted, open-source customer relationship management system for Research Community Managers (RCMs), built by the RCM Cooperative.
+The RCM-CRM is a self-hosted, open-source Customer Relationship Management (CRM) system for Research Community Managers (RCMs), built by the RCM Cooperative.
 
 It replaces a prior SharePoint-based MVP — the [RCM Cooperative Community Mapping Workflow](https://github.com/rcmcooperative/community-mapping) — retaining [Kumu](https://kumu.io/) as the public-facing visualisation layer.
 
