@@ -1,4 +1,4 @@
-# CLAUDE.md — RCM CRM Project Context
+# CLAUDE.md — RCM-CRM Project Context
 
 ## Working preferences (apply throughout this project)
 - UK English spelling throughout.
@@ -113,7 +113,7 @@ Don't assume based on which alias you think you ran.
 If `/status` shows an unexpected base URL, run `conda deactivate` and check again before assuming a settings.json problem.
 
 ## Documentation & review process
-Design/scope documentation and open questions live in this separate repo (rcm-crm), distinct from the operational repos (CRM-onboarding, follow-up tracker).
+Design/scope documentation and open questions live in this separate repo (RCM-CRM), distinct from the operational repos (CRM-onboarding, follow-up tracker).
 Repo is private initially for review by a DataLad-affiliated developer friend, via GitHub issues used as a decision log.
 Will be opened publicly after that review.
 
