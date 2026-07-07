@@ -1,79 +1,90 @@
-# Template for setting up RCM Cooperative partner repositories
+# RCM CRM
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/github/all-contributors/rcmcooperative/rcm-crm?color=ee8449&style=flat-square)](#contributors)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## About this Repository
 
+This repository contains the documentation, research materials, and outputs for the RCM CRM project, developed by the [RCM Cooperative](http://rcmcooperative.com/).
+
+This project follows open research principles to deliver FAIR and openly licensed materials. 
+Publication of these materials supports transparency in this project, and reproducibility of similar work. 
+All materials from the project are published as open as possible, as closed as necessary.
+
 This repository builds on the template created and maintained by *The Turing Way* team members and shared under CC-BY 4.0 for reuse: https://github.com/alan-turing-institute/reproducible-project-template.
 
-When reusing this repository, update the information below with information about the intended partnership.
+When reusing this repository, you can run the Claude skill /update-template-repo (included here) to update the information below with information relevant to the project.
 
 Note after templating this directory, you may wish to create an additional directory called `private`. 
 Use this directory to enable files to be stored locally without being included in the main repo (this directory is excluded by the [.gitignore](~/.gitignore)). 
 This is useful where there are restrictions on sharing some information (GDPR) or license terms are yet to be agreed. 
 
 ## Vision and Mission
-See materials from [Community Pulse](https://www.communitypulse.io/50-metrics-kpis-and-okrs/) for more guidance on developing the vision and mission.
 
-- **Vision:** A short phrase describing the future you are ultimately working towards (your final destination or desired end state).
-- **Mission:** A one-sentence statement describing the reason your organization or program exists (what you do + who/what you do this for).
+- **Vision:** Research community managers everywhere have open, privacy-conscious, ethical tools for understanding and growing their communities.
+- **Mission:** To build and maintain a self-hosted, open-source CRM for Research Community Managers (RCMs), enabling transparent, GDPR-aware community engagement tracking — designed to be cloned and adapted by any research community.
 
 ## About
 
-Motivation and background in a nutshell.
+The RCM CRM is a self-hosted, open-source customer relationship management system for Research Community Managers (RCMs), built by the RCM Cooperative.
+
+It replaces a prior SharePoint-based MVP — the [RCM Cooperative Community Mapping Workflow](https://github.com/rcmcooperative/community-mapping) — retaining [Kumu](https://kumu.io/) as the public-facing visualisation layer.
+
+Designed from the outset to be cloned and handed off to individual client communities, with client-specific configuration layered on top of a common template.
 
 ## Roadmap & Milestones
 
-- **Goals:** Clear overview of overarching and short-term goals.
-- **Outcomes:** Description of expected results and deliverables.
+### v1
+
+- [ ] SQLite database with generic relationship and custom-field model
+- [ ] MOE (Mountain of Engagement) stage tracking with full stage-history audit trail
+- [ ] Automated stage-progression suggestions (RCM confirms, not auto-applied)
+- [ ] Mountain-shaped visualisation (scaled parallelograms per stage) and kanban board view
+- [ ] Stalled/at-risk flagging (no recent interaction)
+- [ ] Tagging and segmentation, with optional local-Qwen-suggested tags based on interaction content
+- [ ] Duplicate-contact detection across multi-source intake
+- [ ] Communication log (outreach sent, separate from interactions received)
+- [ ] Reporting via version-controlled Jupyter notebooks with pseudonymised IDs only
+- [ ] Email pipeline integration (Gmail API + local Qwen3 via Ollama) surfacing matched engagement activities
+- [ ] Docker-based self-hosted deployment
+
+### v1.1+ / v2
+
+- [ ] ORCID OAuth and token-based self-service correction form
+- [ ] Email marketing/comms tooling integration (e.g. Mailchimp, Yet Another Mail Merge)
+- [ ] NLP/chatbot-based contact entry
+- [ ] Photo/name-tag OCR entry (vision-capable local model)
+- [ ] Federated cross-community data exchange
+- [ ] Migration path from SQLite to Postgres for concurrent multi-user editing
 
 ## The Team
 
-- **Members:** List of team members and their roles in the project.
-- **Roles & Responsibilities:** [Team Directory](link-to-directory) outlines roles, responsibilities and their ways of working.
+| Name | Affiliation | ORCID | GitHub |
+|---|---|---|---|
+| Cassandra Gould van Praag | RCM Cooperative | [0000-0002-8584-4637](https://orcid.org/0000-0002-8584-4637) | [@cassgvp](https://github.com/cassgvp) |
+| Emma Karoune | RCM Cooperative | [0000-0002-6576-6053](https://orcid.org/0000-0002-6576-6053) | [@EKaroune](https://github.com/EKaroune) |
+| Malvika Sharan | St Jude Children's Research Hospital | [0000-0001-6619-7369](https://orcid.org/0000-0001-6619-7369) | [@malvikasharan](https://github.com/malvikasharan) |
 
 ## Contributing
 
-- **Guidelines:** [Contribution Guidelines](link-to-guidelines) for contributors.
-- **Code of Conduct:** [Code of Conduct](link-to-coc) ensures a respectful project environment.
-- **Resource Plans:** Details on available resources and recommended practices for the project team.
+- **Guidelines:** [Contribution Guidelines](CONTRIBUTING.md) for contributors.
+- **Code of Conduct:** [Code of Conduct](CODE_OF_CONDUCT.md) ensures a respectful project environment.
 
 ## Licensing
 
-This project is licensed under the CC-BY-4.0 License - see the LICENSE.md file for details.
+This project is licensed under the CC-BY-4.0 License for documentation and MIT license for code - see the LICENSE.md file for details.
 
 ## Citing & Acknowledgement
 
-- **Citation Instructions:** How to cite the project.
-- **Acknowledgment:** Recognising contributions by different members.
+This project builds on the [RCM Cooperative Community Mapping Workflow](https://github.com/rcmcooperative/community-mapping):
+
+> Gould van Praag, C. (2025). RCM Cooperative Community Mapping Workflow (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.15320348
+
+To cite this repository, please use the information in [`CITATION.cff`](CITATION.cff) once it has been added — see the setup checklist below.
 
 ## Contact
 
-- **Reach Out:** Contact details for questions, feedback, or ideas.
-
-
-
-### Checklist for setting an online repository 
-
-- [ ] Add a README file
-- [ ] Add a [CONTRIBUTING](CONTRIBUTING.md) file
-- [ ] Add a [LICENSE](LICENSE.md)
-- [ ] Add a [Code of Conduct](CODE_OF_CONDUCT.md)
-- [ ] Install [all-contributors](https://allcontributors.org/) bot
-- [ ] .gitignore file (choose from a template)
-- [ ] Issue templates
-    - [ ] Optionally Install [Welcome/behavior](https://github.com/behaviorbot/welcome) bot (see The Turing Way [config](https://github.com/alan-turing-institute/the-turing-way/blob/main/.github/config.yml))
-- [ ] Create a directory with files for project management (meetings, reports, proposals)
-- [ ] Create a directory with files for communications
-- [ ] Create a directory for research analysis
-- [ ] Create a directory for research results/outcomes to share (?)
-- [ ] Create a directory for ethics approval and project policies
-- [ ] Create a directory with files for stakeholders' info and the nature of engagement
-- [ ] Connect repo with Zenodo
-- [ ] Add cff file for citation
-- [ ] Add badges
-
+Reach out to [Cassandra Gould van Praag](https://github.com/cassgvp) at [cassandra.gouldvanpraag@rcmcooperative.com](mailto:cassandra.gouldvanpraag@rcmcooperative.com) with questions, feedback, or ideas.
 
 ## Contributors ✨
 
@@ -90,3 +101,35 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+
+## Checklist for setting an online repository 
+
+This repo has been templated from the [RCM Cooperative Partner template repo](https://github.com/rcmcooperative/partner-template), including file structure, starter contents and a Claude Skill to fill in template information. 
+
+After running the Claude skill, please review the list below to and check off once completed.
+
+This repo includes:
+
+- [ ] A meaningful and accurate README.md
+- [ ] A meaningful and accurate [CONTRIBUTING](CONTRIBUTING.md) file
+- [ ] A [LICENSE](LICENSE.md) (we suggest MIT for code and CC-BY-4.0 for documentation)
+- [ ] A [Code of Conduct](CODE_OF_CONDUCT.md) (we suggest RCM Cooperative CoC)
+- [ ] A directory for project management (communications, meetings, reports, proposals)
+- [ ] A directory for assets (non-code supporting files such as images, diagrams, templates, and similar media) that are used in the projects documentation or output)
+- [ ] A directory for documentation
+- [ ] Directories for any research materials if appropriate for the project (ethics, data, analysis)
+- [ ] Ready to use [all-contributors](https://allcontributors.org/) bot (installed for the RCM Cooperative GitHub organisation)
+- [ ] Appropriate issue templates
+- [ ] Appropriate .gitignore file
+- [ ] Connect repo with Zenodo <mark>the order of these needs to be reviewed</mark>
+- [ ] Add cff file for citation (we suggest creating this with https://bit.ly/cffinit)
+- [ ] Add a DOI badge (see the zenodo doi badge widget)
+
+
+
+
+
+
+
+

@@ -2,9 +2,9 @@
 title: |
   \vspace{-4cm}
   \includegraphics[width=\textwidth]{../../assets/logos-rcm-neuro.png} \par \vspace{0.5cm}
-  Briefing Note on Tanenbaum Open Science Institute (TOSI) Open Scientist in Residence Program (OSRP) 2025
+  Briefing Note on X YYYY
 author: "Cassandra Gould van Praag, Executive Director, RCM Cooperative"
-date: "March 2026"
+date: "mmmm YYYY"
 papersize: a4
 geometry:
   - top=1.5cm

@@ -2,7 +2,7 @@
 
 Thank you for taking the time to contribute to this project. 🎉
 
-The **RCM Cooperative Partnership with [INSERT PARTNER NAME]** repository is developed by the RCM Cooperative.
+The **RCM CRM** repository is developed by the RCM Cooperative.
 
 This project is being developed **openly** and invites contributions from **anyone interested** in reproducible data science who would like to get involved.
 You can suggest topics to include in this repository, report mistakes/bugs, create Pull Requests to fix an error, offer resources or help develop or review the training materials.
