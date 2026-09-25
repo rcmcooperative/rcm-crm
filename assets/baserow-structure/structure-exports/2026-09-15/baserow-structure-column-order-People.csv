@@ -1,0 +1,25 @@
+position,field-name
+1,name-person
+2,name-person-first
+3,name-person-last
+4,pronouns
+5,email-1
+6,email-2
+7,organisations
+8,institutional-profile
+9,ORCID
+10,github
+11,linkedin
+12,carrer-current-role-title
+13,career-stage
+14,notes
+15,communities-lead
+16,communities-contributor-profile
+17,projects-lead
+18,projects-contributors
+19,projects-contact
+20,interactions-lead
+21,interactions-participant
+22,mapping-consent
+23,Last modified
+24,Last modified by

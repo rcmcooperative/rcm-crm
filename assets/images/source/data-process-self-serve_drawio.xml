@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="RCM-CRM Self-serve" id="jumZlaJrJnJKaawqK_CT">
+    <mxGraphModel dx="1348" dy="894" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Consent / identity intake form (pre-filled, identity-scoped)" vertex="1">
+          <mxGeometry height="70" width="240" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Email mailmerge re-confirmation loop" vertex="1">
+          <mxGeometry height="70" width="240" x="40" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Staging table" vertex="1">
+          <mxGeometry height="60" width="200" x="350" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Comparison script (diffs staging vs. live)" vertex="1">
+          <mxGeometry height="60" width="220" x="620" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Staff review" vertex="1">
+          <mxGeometry height="60" width="180" x="910" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="✅ People table (live record updated)" vertex="1">
+          <mxGeometry height="60" width="200" x="1160" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-7" edge="1" parent="1" source="XKm6GnztuZ6oUyRjFCYL-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="XKm6GnztuZ6oUyRjFCYL-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-8" edge="1" parent="1" source="XKm6GnztuZ6oUyRjFCYL-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="XKm6GnztuZ6oUyRjFCYL-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-9" edge="1" parent="1" source="XKm6GnztuZ6oUyRjFCYL-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="XKm6GnztuZ6oUyRjFCYL-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-10" edge="1" parent="1" source="XKm6GnztuZ6oUyRjFCYL-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="XKm6GnztuZ6oUyRjFCYL-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-11" edge="1" parent="1" source="XKm6GnztuZ6oUyRjFCYL-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="XKm6GnztuZ6oUyRjFCYL-6" value="approved changes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="Admin alert on new/changed staging entries" vertex="1">
+          <mxGeometry height="60" width="220" x="610" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-13" edge="1" parent="1" source="XKm6GnztuZ6oUyRjFCYL-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;dashed=1;endArrow=block;endFill=1;" target="XKm6GnztuZ6oUyRjFCYL-12" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580.05" y="170" />
+              <mxPoint x="580.05" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=10;align=left;verticalAlign=top;fontStyle=2;" value="Recommended: add a &#39;Last Modified By&#39; field to the staging table so alerts/reviews show who submitted each change (Baserow webhook payload includes this automatically once the field exists). Writes to the live table only happen after staff review -- no native pending-review step in Baserow itself, so this workflow is built around it." vertex="1">
+          <mxGeometry height="130" width="500" x="370" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="XKm6GnztuZ6oUyRjFCYL-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=10;align=left;verticalAlign=top;spacing=6;" value="Legend ✅ = developed / confirmed ❌ = not developed ⚠️ = TBC / partial  Blue = data source Purple = web app / process Green = Baserow core table Orange = self-serve flow Yellow = output/destination" vertex="1">
+          <mxGeometry height="180" width="190" x="950" y="340" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

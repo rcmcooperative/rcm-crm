@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 .claude/skills/crm-notes-extraction/scripts/build_workbook.py private/candidates.json private/crm-extraction-output.xlsx)"
+    ]
+  }
+}

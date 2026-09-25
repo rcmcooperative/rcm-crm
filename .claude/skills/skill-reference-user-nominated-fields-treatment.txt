@@ -1,0 +1,27 @@
+People *-user-nominated fields — how to treat them
+
+These seven fields exist because Cass built a self-nomination/signup form in Baserow, where people can submit information about themselves directly. The defining property of every -user-nominated field is provenance, not topic: it holds what a human typed about themselves through that form. A fact that happens to be topically similar — say, an organisation inferred from an email domain, or a role inferred from a Slack message — is still machine-derived, not a person's self-report, and provenance is what decides write eligibility here, not subject-matter overlap. No automated process should ever write to a -user-nominated field on the strength of "this looks like the kind of thing that goes here" — only an actual human-submitted-form value belongs there. With that principle set, the seven fields fall into two categories with opposite rules for any content-extraction skill (meeting notes, Slack activity, email threads, etc.):
+
+Category A — staging inputs, never write to these
+
+orgs-user-nominated, communities-lead-user-nominated, communities-participant-user-nominated, notes-user-nominated
+
+These hold what a person typed on the self-nomination form, as free text — a claimed organisation, a claimed community-leadership role, a claimed community-participation, or general notes. They are not meant to be filled by anything else, human-authored or machine-derived. Cass manually reviews each one and decides whether/how to convert it into the real structured field (organisations, communities-lead, communities-participant, or folded into notes). A content-extraction skill reading meeting notes, Slack, or email is a different pipeline entirely — it should never write to any of these four fields, even if the source material states exactly the kind of information they hold, and even when the extracted value is confidently correct. If a meeting note says "Sara said she leads the CSCCE community," that's a candidate for the real communities-lead link field (subject to normal node-reconciliation rules) — not for communities-lead-user-nominated, which is reserved for what the person themselves typed into the form. The same logic governs machine-derived organisation data: an organisation extracted from an email domain (i.e., inferred purely from the existence of the email address, not from anything a person stated about themselves) is categorically different from a human's self-nomination, however similar the resulting label looks, and must never be routed into orgs-user-nominated — it belongs in its own structured column/candidate list, kept separate, exactly like any other machine-derived field.
+
+Category B — flexibility overflow, writable with a mandatory review flag
+
+pronouns-user-nominated, git-other-user-nominated, socials-other-user-nominated
+
+These exist to capture a real, useful fact that doesn't fit a fixed field or picklist — not staging for a separate pipeline. Any extraction skill should write to these when the source material states the relevant fact, following these per-field rules, and must always mark the write for human review (never silently accept it as settled):
+
+pronouns-user-nominated (plain text) — the source states pronouns that don't match any option in the pronouns picklist (she/her, he/him, she/they, they/she, they/them, he/they, they/he, self identify). Write the stated pronouns here verbatim as free text. Never write both pronouns and pronouns-user-nominated for the same fact.
+git-other-user-nominated (long text) — the source mentions a username on a git-hosting platform other than GitHub (e.g. Codeberg, GitLab). Write it as a full URL where possible (e.g. www.codeberg.org/<username>), not just the bare username.
+socials-other-user-nominated (long text) — the source mentions a username on a social network other than LinkedIn (e.g. Bluesky, Mastodon). Write it as a full URL where possible (e.g. www.bluesky.org/<username>), not just the bare username.
+
+Note that Category B is still bounded by the provenance principle above: what makes these writable is that the source itself is reporting a fact the person stated or displays (a pronoun line in an email signature, a handle in a Slack profile) — the skill is transcribing a stated fact into an overflow slot, not inventing or inferring one. It is not an invitation for any machine-derived guess to land here just because the field's format happens to be flexible.
+
+One more, non-writable either way
+
+edit-row-link — a read-only Baserow system field tied to a form view. No skill ever writes to this.
+
+Summary rule of thumb for other skills: ask provenance first, then shape. If the value did not come from the person's own self-report — it was derived, inferred, or extracted by code from some other fact (an email domain, an activity log, an algorithm's guess) — it never goes into a -user-nominated field, full stop, regardless of how well its topic matches. Only once a value is confirmed as a genuine human self-report does the second question apply: if the field name pairs with a link field that already has its own clean write target elsewhere in the schema (orgs-↔organisations, communities-lead-↔communities-lead, communities-participant-↔communities-participant) or is explicitly reserved for manual review (notes-user-nominated) — forbidden, stays staged for Cass's manual review. If it pairs with a scalar field (pronouns, GitHub, LinkedIn) where the fixed field/format genuinely can't hold what the source says — writable, always flagged.

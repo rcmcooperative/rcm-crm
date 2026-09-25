@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36">
+  <diagram name="RCM-CRM Web App" id="rVPd1jDcmMcaJ0xyOEjC">
+    <mxGraphModel dx="1268" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Web App" vertex="1">
+          <mxGeometry height="80" width="220" x="490" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Parser: Slack export" vertex="1">
+          <mxGeometry height="55" width="260" x="60" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-3" edge="1" parent="1" source="vyGKdF-YuvvvrWx3ibKA-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="vyGKdF-YuvvvrWx3ibKA-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Parser: Zoom / call attendee export" vertex="1">
+          <mxGeometry height="55" width="260" x="60" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-5" edge="1" parent="1" source="vyGKdF-YuvvvrWx3ibKA-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="vyGKdF-YuvvvrWx3ibKA-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Parser: Meeting notes docs" vertex="1">
+          <mxGeometry height="55" width="260" x="60" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-7" edge="1" parent="1" source="vyGKdF-YuvvvrWx3ibKA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="vyGKdF-YuvvvrWx3ibKA-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Parser: GitHub" vertex="1">
+          <mxGeometry height="55" width="260" x="60" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-9" edge="1" parent="1" source="vyGKdF-YuvvvrWx3ibKA-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="vyGKdF-YuvvvrWx3ibKA-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Parser: Zenodo" vertex="1">
+          <mxGeometry height="55" width="260" x="60" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-11" edge="1" parent="1" source="vyGKdF-YuvvvrWx3ibKA-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="vyGKdF-YuvvvrWx3ibKA-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Parser: Gmail / Google Contacts export" vertex="1">
+          <mxGeometry height="55" width="260" x="60" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-13" edge="1" parent="1" source="vyGKdF-YuvvvrWx3ibKA-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="vyGKdF-YuvvvrWx3ibKA-1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ RCM Cooperative sign-up form (hosted, self-serve)" vertex="1">
+          <mxGeometry height="60" width="260" x="60" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Staging table" vertex="1">
+          <mxGeometry height="55" width="180" x="530" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-16" edge="1" parent="1" source="vyGKdF-YuvvvrWx3ibKA-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="vyGKdF-YuvvvrWx3ibKA-15" value="new rows">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-17" edge="1" parent="1" source="vyGKdF-YuvvvrWx3ibKA-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;dashed=1;endArrow=block;endFill=1;" target="vyGKdF-YuvvvrWx3ibKA-1" value="review/merge">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=10;align=left;verticalAlign=top;fontStyle=2;" value="Note: parsers are considered a separate, earlier build stage from the Web App shell itself -- parts of this logic already exist in the original community-mapping MVP." vertex="1">
+          <mxGeometry height="90" width="300" x="60" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Dashboard (contribution frequency, segment counts)" vertex="1">
+          <mxGeometry height="65" width="240" x="800" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Kumu embed (internal + public views)" vertex="1">
+          <mxGeometry height="65" width="240" x="800" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="⚠️ Attendee-list export-prep tool (formats names for paste-to-link)" vertex="1">
+          <mxGeometry height="65" width="240" x="1040" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=12;fontStyle=0;align=center;verticalAlign=middle;arcSize=8;" value="✅ Paste-to-link (Baserow native feature)" vertex="1">
+          <mxGeometry height="55" width="240" x="820" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-23" edge="1" parent="1" source="vyGKdF-YuvvvrWx3ibKA-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="vyGKdF-YuvvvrWx3ibKA-19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-24" edge="1" parent="1" source="vyGKdF-YuvvvrWx3ibKA-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="vyGKdF-YuvvvrWx3ibKA-20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-25" edge="1" parent="1" source="vyGKdF-YuvvvrWx3ibKA-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;endArrow=block;endFill=1;" target="vyGKdF-YuvvvrWx3ibKA-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-26" edge="1" parent="1" source="vyGKdF-YuvvvrWx3ibKA-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#666666;fontSize=10;dashed=1;endArrow=block;endFill=1;" target="vyGKdF-YuvvvrWx3ibKA-22" value="feeds into">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vyGKdF-YuvvvrWx3ibKA-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontSize=10;align=left;verticalAlign=top;spacing=6;" value="Legend ✅ = developed / confirmed ❌ = not developed ⚠️ = TBC / partial  Blue = data source Purple = web app / process Green = Baserow core table Orange = self-serve flow Yellow = output/destination" vertex="1">
+          <mxGeometry height="180" width="190" x="850" y="600" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,15 @@
+position,field-name
+1,name-org
+2,name-org-long
+3,name-org-abbreviation
+4,type
+5,website
+6,notes
+7,people-employees
+8,projects-sponsor
+9,communities-sponsor
+10,projects-funder
+11,interactions-sponsor
+12,interactions-funder
+13,last-modified-by
+14,last-modified-date
