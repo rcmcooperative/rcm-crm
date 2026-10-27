@@ -4,9 +4,13 @@
 
 ## About this Repository
 
-This repository contains the documentation, research materials, and outputs for the **RCM-CRM project**, developed by the [RCM Cooperative](http://rcmcooperative.com/).
+This repository contains the documentation, research materials, and outputs for the **RCM-CRM**, developed by the [RCM Cooperative](http://rcmcooperative.com/).
 
-This project follows open research principles to deliver FAIR and openly licensed materials. Publication of these materials supports transparency in this project, and reproducibility of similar work. All materials from the project are published as open as possible, as closed as necessary.
+We are pleased to share this project with you openly as part of our ongoing development. If you stop any errors or gaps (which there surely will be!), we'd love for you to share them with us! See our [CONTRIBUTING](./CONTRIBUTING.md) guide.
+
+All contributors to this project are requested to follow RCM Cooperatives [Code of Conduct](CODE_OF_CONDUCT.md).
+
+This project follows open research principles to deliver FAIR and openly licensed materials. Publication of these materials supports transparency in this project, and reproducibility of similar work. All materials from the project are published as open as possible, as closed as necessary. Documentation is shared under CC-BY 4.0 and code under MIT. See our [LICENSE](LICENSE.md) for more details.
 
 Note after pulling a local copy of this repo, you may wish to create an additional directory called `private`. Use this directory to enable files to be stored locally without being included in the main repo (this directory is excluded by the [.gitignore](~/.gitignore)). This is useful where there are restrictions on sharing some information (GDPR) or license terms are yet to be agreed. See [Repository structure](#repository-structure) below for what lives where.
 
