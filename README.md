@@ -2,6 +2,8 @@
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 
+[![DOI](https://zenodo.org/badge/1285339502.svg)](https://doi.org/10.5281/zenodo.23692251)
+
 ## About this Repository
 
 This repository contains the documentation, research materials, and outputs for the **RCM-CRM**, developed by the [RCM Cooperative](http://rcmcooperative.com/).

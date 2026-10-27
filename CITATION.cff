@@ -1,0 +1,60 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Research Community Manager's Community Relationship
+  Management System (RCM-CRM)
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Cassandra
+    family-names: Gould van Praag
+    email: cassandra.gouldvanpraag@rcmcooperative.com
+    affiliation: RCM Cooperative
+    orcid: 'https://orcid.org/0000-0002-8584-4637'
+  - given-names: Emma
+    family-names: Karoune
+    email: emma.karoune@rcmcooperative.com
+    affiliation: RCM Cooperative; Alan Turing Institute
+    orcid: 'https://orcid.org/0000-0002-6576-6053'
+  - given-names: Malvika
+    family-names: Sharan
+    affiliation: RCM Cooperative; St Jude Children's Research Hospital
+    orcid: 'https://orcid.org/0000-0001-6619-7369'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23692251
+    description: URL of version 1.0.0 of the software and documentation
+repository-code: 'https://github.com/rcmcooperative/rcm-crm'
+abstract: >-
+  The RCM-CRM is an open-source Community Relationship
+  Management (CRM) system for Research Community Managers,
+  developed by RCM Cooperative. It supports transparent,
+  privacy-conscious and UK GDPR-aware tracking of community
+  engagement, and is designed to be cloned and adapted by
+  any research community. The current build uses Baserow,
+  with servers hosted in Germany, as a five-table relational
+  database (People, Organisations, Communities,
+  Interactions, Projects). A set of Claude Code skills
+  ingests meeting notes, email contacts and Slack exports,
+  and exports consent-filtered network visualisations to
+  Kumu. Skills that process live CRM data use deterministic
+  code rather than an LLM, and LLM use is limited to
+  non-confidential source material. The repository also
+  contains step-by-step training documentation, a data
+  privacy impact assessment template, a platform needs
+  assessment, and a consent model offering members five
+  levels of data visibility. Documentation is released under
+  CC-BY 4.0 and code under MIT.
+keywords:
+  - research community management
+  - customer relationship management
+  - CRM
+  - community engagement
+  - community visualisation
+license: CC-BY-4.0
+version: 1.0.0
+date-released: '2026-10-27'
