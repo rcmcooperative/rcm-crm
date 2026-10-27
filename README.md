@@ -79,14 +79,15 @@ Further resources on our handling data privacy and protection in this tooling:
 
 This project is being developed and maintained by [RCM Cooperative](https://www.rcmcooperative.com/) (Co-Founders below). 
 
-**We welcome contributions from anyone interested in this topic, to help make this tool more robust and reproducible (see [CONTRIBUTING](#contributing)).**
-
 | Name | Affiliation | ORCID | GitHub |
 | --- | --- | --- | --- |
 | Cassandra Gould van Praag | RCM Cooperative | [0000-0002-8584-4637](https://orcid.org/0000-0002-8584-4637) | [@cassgvp](https://github.com/cassgvp) |
 | Emma Karoune | RCM Cooperative; Alan Turing Institute | [0000-0002-6576-6053](https://orcid.org/0000-0002-6576-6053) | [@EKaroune](https://github.com/EKaroune) |
 | Malvika Sharan | RCM Cooperative; St Jude Children's Research Hospital | [0000-0001-6619-7369](https://orcid.org/0000-0001-6619-7369) | [@malvikasharan](https://github.com/malvikasharan) |
 
+**We welcome contributions from anyone interested in this topic, to help make this tool more robust and reproducible (see [CONTRIBUTING](#contributing)).**
+
+See the full list of [Contributors](#contributors-) below. 
 
 ## AI Use
 
@@ -253,14 +254,28 @@ Reach out to [Cassandra Gould van Praag](https://github.com/cassgvp) at [cassand
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
-| [![Cassandra Gould van Praag](https://avatars.githubusercontent.com/u/43407869?v=4?s=100) **Cassandra Gould van Praag**](https://github.com/cassgvp) [💻](https://github.com/rcmcooperative/rcm-crm/commits?author=cassgvp) [📖](https://github.com/rcmcooperative/rcm-crm/commits?author=cassgvp) [🤔](#ideas-cassgvp) | [![Emma Karoune](https://avatars.githubusercontent.com/u/58147174?v=4?s=100) **Emma Karoune**](https://www.turing.ac.uk/people/research-associates/emma-karoune) [🤔](#ideas-EKaroune) | [![Malvika Sharan](https://avatars.githubusercontent.com/u/5370471?v=4?s=100) **Malvika Sharan**](http://malvikasharan.github.io/) [🤔](#ideas-malvikasharan) |
-| --- | --- | --- |
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/cassgvp"><img src="https://avatars.githubusercontent.com/u/43407869?v=4&size=100" width="100px" height="100px" alt="Cassandra Gould van Praag"/><br /><sub><b>Cassandra Gould van Praag</b></sub></a><br /><a href="https://github.com/rcmcooperative/rcm-crm/commits?author=cassgvp" title="Code">💻</a> <a href="https://github.com/rcmcooperative/rcm-crm/commits?author=cassgvp" title="Documentation">📖</a> <a href="#ideas-cassgvp" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://www.turing.ac.uk/people/research-associates/emma-karoune"><img src="https://avatars.githubusercontent.com/u/58147174?v=4&size=100" width="100px" height="100px" alt="Emma Karoune"/><br /><sub><b>Emma Karoune</b></sub></a><br /><a href="#ideas-EKaroune" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="http://malvikasharan.github.io/"><img src="https://avatars.githubusercontent.com/u/5370471?v=4&size=100" width="100px" height="100px" alt="Malvika Sharan"/><br /><sub><b>Malvika Sharan</b></sub></a><br /><a href="#ideas-malvikasharan" title="Ideas, Planning, & Feedback">🤔</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/MarySHADE"><img src="https://avatars.githubusercontent.com/u/159810285?v=4&size=100" width="100px" height="100px" alt="MarySHADE"/><br /><sub><b>MarySHADE</b></sub></a><br /><a href="#ideas-MarySHADE" title="Ideas, Planning, & Feedback">🤔</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
-Note we are currently using locally installed all-contributors while this repo is private. Add contributors locally using the below command in a terminal then push changes.
-
-`npx all-contributors-cli add malvikasharan ideas`
+See [All-Contributors bot usage](https://allcontributors.org/en/bot/usage/) for how to add contributors to this repo. 
 
 ## Checklist for setting an online repository
 
