@@ -32,6 +32,20 @@
       "contributions": [
         "ideas"
       ]
+    },
+    {
+      "login": "MarySHADE",
+      "name": "MarySHADE",
+      "avatar_url": "https://avatars.githubusercontent.com/u/159810285?v=4",
+      "profile": "https://github.com/MarySHADE",
+      "contributions": [
+        "ideas"
+      ]
     }
-  ]
+  ],
+  "files": [
+    "README.md"
+  ],
+  "commitType": "docs",
+  "contributorsPerLine": 7
 }
