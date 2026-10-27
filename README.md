@@ -8,9 +8,79 @@ This repository contains the documentation, research materials, and outputs for 
 
 This project follows open research principles to deliver FAIR and openly licensed materials. Publication of these materials supports transparency in this project, and reproducibility of similar work. All materials from the project are published as open as possible, as closed as necessary.
 
-This repository builds on the template created and maintained by *The Turing Way* team members and shared under CC-BY 4.0 for reuse: [https://github.com/alan-turing-institute/reproducible-project-template](https://github.com/alan-turing-institute/reproducible-project-template).
-
 Note after pulling a local copy of this repo, you may wish to create an additional directory called `private`. Use this directory to enable files to be stored locally without being included in the main repo (this directory is excluded by the [.gitignore](~/.gitignore)). This is useful where there are restrictions on sharing some information (GDPR) or license terms are yet to be agreed. See [Repository structure](#repository-structure) below for what lives where.
+
+## Vision and Mission
+
+- **Vision:** Research community managers everywhere have open, privacy-conscious, ethical tools for understanding and growing their communities.
+- **Mission:** To build and maintain an open-source Community Relationship Management (CRM) system for Research Community Managers (RCMs), enabling transparent, GDPR-aware community engagement tracking, which can be cloned and adapted by any research community.
+
+## About
+
+The RCM-CRM is an open-source Community Relationship Management (CRM) system for Research Community Managers (RCMs), built by RCM Cooperative.
+
+**Learn more about why we believe a CRM is appropriate tooling to manage community data in [this rational](docs/why-crm.md) and [this presentation](https://zenodo.org/records/23681028).**
+
+### How to use
+
+If you are interested in deploying this CRM for your community, start with the step-by-step [training documentation](docs/baserow/training/):
+1. [Designing the visualisation](docs/baserow/training/01-designing-the-visualisation.md)
+2. [Entering data](docs/baserow/training/02-entering-data.md)
+3. [Maintinaing your data](docs/baserow/training/03-maintaining-your-data.md)
+4. [Enabling self-serve editing](docs/baserow/training/04-enabling-self-serve-editing.md)
+5. [Downloading your data](docs/baserow/training/05-downloading-your-data.md)
+6. [Managing your visualisation](docs/baserow/training/06-managing-the-visualisation.md)
+
+### Architecture
+
+The current architecture uses Baserow - an open source database design tool with servers hosted in Germany — see the [architecture overview](docs/baserow/architecture-overview.md) and [Baserow schema](docs/baserow/schema.md) for the full design. An earlier self-hosted SQL/SQLite design remains documented as an alternative for deployments needing full infrastructure control (see [documentation on self-hosted architecture](docs/self-hosted-architecture/). A full [rationale for the current platform choice is available here](docs/platform-needs-assessment.md).
+
+This tooling replaces a prior SharePoint-based MVP — the [RCM Cooperative Community Mapping Workflow](https://zenodo.org/records/15320348) — retaining [Kumu](https://kumu.io/) as the public-facing visualisation layer.
+
+This tooling is designed to be cloned and handed off to individual community managers, via Baserow's own workspace export/import mechanism — see [Chapter 2: Entering data](docs/baserow/training/02-entering-data.md) in the training documentation for the confirmed process. RCM Cooperative are also pleased to support clients with customisation and data ingress/maintanance processes. Please [Contact us](https://www.rcmcooperative.com#contact) to discuss your needs. 
+
+### Data privacy and protection
+
+The data held in this CRM may cover both facts about your members (for example names, email addresses, ORCID, engagement data) and 'opinions' such as their relative influence and interest in your project. As such it is appropriate to manage this data with a high regard for the privacy of your members and security of access. 
+
+We propose the following principles for how this data should be handled:
+1. Data should be held in accordance with UK GDPR and the privacy policy of your hosting organisation.
+2. Engagement data should be compiled from public sources (for example, public GitHub repositories) and from sources your have legitimate access to through your own activities (for example, pre-existing email engagements, Slack workspaces, or event registrations). You should noe seek out or compile data about members from sources outside these categories.
+3. Data subjects should be offered a choice of exposure levels to consent to:
+    - 3.1. No data holding: minimal information retained to build a suppression list which blocks further processing
+    - 3.2. No external visibility: data used for internal monitoring only
+    - 3.3. Aggregate or anonymised external visibility: publication of summary statistics incorporating this member, with no identifiable detail
+    - 3.4. Pseudonymised external visibility: external publication of member engagement, connections, with identifiable information pseudonymised and linkage keys retained internally
+    - 3.5. Full external visibility: external publication of member engagement, connections, and individual identifiable information. Note this tier is explicitly developed to make it easier for peers to find your expertise, and for you to connect with collaborators, other experts, and opportunities tailored to your interests. 
+4. Opinions about the data subject (for example their level of interest or influence) should never be published.
+5. Where internal data holding is consented to, that data should be visible by default to a small named group with operational responsibility (for example the delivery team assessing membership criteria and community health).
+6. Any assessment of whether a member has met predefined engagement criteria (for example using the [Mountain of Engagement model](docs/engagement-framework.md) or RCM Cooperative membership requirements) should be treated as a suggestion for human review, not an automatic determination. 
+7. Members should periodically be asked to review and validate our data holdings and (re)consent at their desired level
+8. Members should be able to access and review their own recorded engagement data at any time, and raise a query or correction. 
+9. Members should be able to request removal of their data, in line with data protection rights to erasure.
+10. Data should not be shared with third parties outside the tool suppliers engaged, and only after thorough review of those suppliers' data privacy and security arrangements, including confirmation of where data is hosted and who (including any sub-processors) may access it.
+11. AI/LLM tools may be used to help extract and structure engagement data from source material (for example, summarising meeting notes), but only on non-confidential material, and only using tools where data-training and retention policies have been explicitly reviewed. 
+12. AI/LLM tools should not be used on any identifiable data, for example to identify or match members' records, flag duplicates, or make any determination about an individual's data (including membership criteria assessments) — this kind of processing is done using deterministic, non-AI methods, so that these decisions remain explainable and auditable. 
+13. All documentation about the deployment should be made available to the community as the project progresses.
+14. The community should be kept informed of the work and encouraged to contribute to the co-design of the tool, for example through discussions about what metadata it would be valuable to hold and communicate.
+
+Further resources on our handling data privacy and protection in this tooling:
+- [Data privacy comparison across considered architectures](docs/platform-needs-assessment.md#table-2-privacy-and-data-residency-comparison)
+- [Data Privacy and Impact Assessment template materials](docs/data-privacy-assessment.md)
+- The [Participant Information Sheet](https://github.com/uk-tre/community-management/blob/main/community-mapping/docs/UK-TRE-map-participant-information-sheet.md) developed to consent members for mapping of the UK TRE community. Note this deployment was customised to ensure all personal identifiable data was held in Microsoft Sharepoint until participants had consented to be publicy identifiable.
+
+## The Team
+
+This project is being developed and maintained by [RCM Cooperative](https://www.rcmcooperative.com/) (Co-Founders below). 
+
+**We welcome contributions from anyone interested in this topic, to help make this tool more robust and reproducible (see [CONTRIBUTING](#contributing)).**
+
+| Name | Affiliation | ORCID | GitHub |
+| --- | --- | --- | --- |
+| Cassandra Gould van Praag | RCM Cooperative | [0000-0002-8584-4637](https://orcid.org/0000-0002-8584-4637) | [@cassgvp](https://github.com/cassgvp) |
+| Emma Karoune | RCM Cooperative; Alan Turing Institute | [0000-0002-6576-6053](https://orcid.org/0000-0002-6576-6053) | [@EKaroune](https://github.com/EKaroune) |
+| Malvika Sharan | RCM Cooperative; St Jude Children's Research Hospital | [0000-0001-6619-7369](https://orcid.org/0000-0001-6619-7369) | [@malvikasharan](https://github.com/malvikasharan) |
+
 
 ## AI Use
 
@@ -20,28 +90,11 @@ This is separate from the AI use inside the CRM's own skills (see [Repository st
 
 Confirm the exact wording and scope of this disclaimer against RCM Cooperative's own AI-use policy, if and when one exists, before treating this as final.
 
-## Vision and Mission
-
-- **Vision:** Research community managers everywhere have open, privacy-conscious, ethical tools for understanding and growing their communities.
-- **Mission:** To build and maintain an open-source CRM for Research Community Managers (RCMs), enabling transparent, GDPR-aware community engagement tracking — designed to be cloned and adapted by any research community.
-
-## About
-
-The RCM-CRM is an open-source Customer Relationship Management (CRM) system for Research Community Managers (RCMs), built by the RCM Cooperative.
-
-**Current architecture is Baserow-based** — see `docs/baserow/architecture-overview.md` and `docs/baserow/schema.md` for the full design. An earlier self-hosted SQL/SQLite design remains documented as an alternative, still the right choice for deployments needing full infrastructure control (see `docs/self-hosted-architecture/`), but is not what RCM Cooperative's own CRM currently runs on. Full rationale for the platform choice: `docs/platform-needs-assessment.md`.
-
-It replaces a prior SharePoint-based MVP — the [RCM Cooperative Community Mapping Workflow](https://github.com/rcmcooperative/community-mapping) — retaining [Kumu](https://kumu.io/) as the public-facing visualisation layer.
-
-Designed from the outset to be cloned and handed off to individual client communities, via Baserow's own workspace export/import mechanism (structure-only export, no client data) — see [Chapter 2: Entering data](docs/baserow/training/02-entering-data.md) in the training documentation for the confirmed process.
-
-**New to running this CRM day-to-day?** Start with the step-by-step training documentation in [`docs/baserow/training/`](docs/baserow/training/) — six chapters covering designing the visualisation, entering data, maintaining your data, enabling self-serve editing, downloading your data, and managing the Kumu visualisation.
-
 ## Roadmap & Milestones
 
-Status cross-checked against the current system overview diagram (`assets/images/overview_drawio.png`).
-
 ### v1 — Baserow build
+
+This is a high-level overview of development. See also our [open issues](https://github.com/rcmcooperative/rcm-crm/issues) for specific activities or changes.
 
 **Database and data model**
 
@@ -64,14 +117,11 @@ Status cross-checked against the current system overview diagram (`assets/images
 - [x] Baserow → Kumu pipeline built: produces separate internal (full data) and public (consent-filtered) workbooks, generic edge types, stable pseudonymisation hash — see `docs/baserow/schema.md` for the full edge/consent registry
 - [ ] Two design assumptions flagged for review: the `affiliated` edge type for `Communities.organisations`/`Projects.communities`, and whether excluding (not just pseudonymising) people without public consent from the public export is the intended policy
 
-**Web App** (data ingest UI, dashboard, mailing list integration — distinct from the Kumu export pipeline above, which is already built)
-
-- [ ] Not yet built — see `docs/baserow/architecture-overview.md`
-
 **Self-serve** (consent, re-confirmation, correction, addition via pre-populated row link)
 
 - [x] Baserow's native Edit row link field generates unique per-row URLs that can be sent privately, pre-filled with the row's current data
-- [ ] The originally-planned staging-table/review step before changes hit the live table is not implemented — a submission via this link currently writes directly to the live row
+- [ ] Tracking when self-serve validation has been provided
+- [ ] Time-based signalling of review and consent
 
 **Publishing and templating**
 
@@ -83,35 +133,26 @@ Status cross-checked against the current system overview diagram (`assets/images
 - [x] Step-by-step training documentation (`docs/baserow/training/`, six chapters) — Chapters 1–5 complete; Chapter 6 (Managing the visualisation) in progress
 - [ ] Reproducible deployment write-up, CC-BY 4.0/MIT materials on GitHub (this repository)
 
-**Mailing list**
-
-- [ ] Platform not yet chosen — TBC, see `docs/baserow/architecture-overview.md`
-
 ### v1.1+ / v2
 
-- [ ] Resolve whether ORCID OAuth is still needed for self-service, now that Baserow's native Edit row link provides a working (if unreviewed) self-serve mechanism
-- [ ] Add a pending-review/staging-table step in front of the Edit row link, to close the gap flagged above
+- [ ] Self-hosted Baserow deployment option, for clients where the third-party-processor relationship in `docs/platform-needs-assessment.md` (Table 2) is a blocker — see `docs/baserow/self-hosted-vs-cloud.md`
+- [ ] Reporting via version-controlled Jupyter notebooks, pseudonymised IDs only, read-only DB connection, including aggregate summary statistics
+
 - [ ] Email marketing/comms tooling integration (e.g. Mailchimp, Yet Another Mail Merge)
 - [ ] NLP/chatbot-based contact entry
 - [ ] Photo/name-tag OCR entry (vision-capable local model)
 - [ ] Federated cross-community data exchange
-- [ ] Self-hosted Baserow deployment option, for clients where the third-party-processor relationship in `docs/platform-needs-assessment.md` (Table 2) is a blocker — see `docs/baserow/self-hosted-vs-cloud.md`
-- [ ] Reusable/API-driven duplicate-detection automation, rather than manually rebuilt per table — see Baserow's advanced-deduplication guidance linked above
+- [ ] Reusable/API-driven duplicate-detection automation
 - [ ] MOE (Mountain of Engagement) stage tracking and visualisation in Baserow itself — the conceptual framework is documented (`docs/engagement-framework.md`, currently marked for review) but not yet implemented as live Baserow fields/views
 - [ ] Stalled/at-risk flagging (no recent interaction) — conceptually descriptive-only by design (see `docs/why-crm.md`), not yet implemented in Baserow
 - [ ] Tagging/segmentation, with optional local-model-suggested tags based on interaction content
 - [ ] Communication log (outreach sent, separate from interactions received)
-- [ ] Reporting via version-controlled Jupyter notebooks, pseudonymised IDs only, read-only DB connection
-- [ ] Resolve the two flagged Kumu pipeline assumptions above, and revisit generic vs. per-table-pair edge typing once the graph itself clarifies the Organisation/Community and Project/other-table boundaries
-- [ ] Internal-only `mission-interest`/`mission-influence` fields on the `People` table, for the internal Kumu map only — see [Chapter 6: Managing the visualisation](docs/baserow/training/06-managing-the-visualisation.md)
 
-## The Team
+**Web App** (data ingest UI, dashboard, mailing list integration — distinct from the Kumu export pipeline above, which is already built)
 
-| Name | Affiliation | ORCID | GitHub |
-| --- | --- | --- | --- |
-| Cassandra Gould van Praag | RCM Cooperative | [0000-0002-8584-4637](https://orcid.org/0000-0002-8584-4637) | [@cassgvp](https://github.com/cassgvp) |
-| Emma Karoune | RCM Cooperative | [0000-0002-6576-6053](https://orcid.org/0000-0002-6576-6053) | [@EKaroune](https://github.com/EKaroune) |
-| Malvika Sharan | St Jude Children's Research Hospital | [0000-0001-6619-7369](https://orcid.org/0000-0001-6619-7369) | [@malvikasharan](https://github.com/malvikasharan) |
+- [ ] Not yet built — see `docs/baserow/architecture-overview.md`
+
+
 
 ## Repository structure
 
@@ -195,6 +236,9 @@ This project builds on the [RCM Cooperative Community Mapping Workflow](https://
 
 To cite this repository, please use the information in [`CITATION.cff`](CITATION.cff) once it has been added — see the setup checklist below.
 
+This repository builds on the template created and maintained by *The Turing Way* team members and shared under CC-BY 4.0 for reuse: [https://github.com/alan-turing-institute/reproducible-project-template](https://github.com/alan-turing-institute/reproducible-project-template).
+
+
 ## Contact
 
 Reach out to [Cassandra Gould van Praag](https://github.com/cassgvp) at [cassandra.gouldvanpraag@rcmcooperative.com](mailto:cassandra.gouldvanpraag@rcmcooperative.com) with questions, feedback, or ideas.
@@ -220,17 +264,16 @@ After running the Claude skill, please review the list below to and check off on
 
 This repo includes:
 
-- [ ] A meaningful and accurate README.md
+- [x] A meaningful and accurate README.md
 - [ ] A meaningful and accurate [CONTRIBUTING](CONTRIBUTING.md) file
-- [ ] A [LICENSE](LICENSE.md) (we suggest MIT for code and CC-BY-4.0 for documentation)
-- [ ] A [Code of Conduct](CODE_OF_CONDUCT.md) (we suggest RCM Cooperative CoC)
-- [ ] A directory for project management (communications, meetings, reports, proposals)
-- [ ] A directory for assets (non-code supporting files such as images, diagrams, templates, and similar media) that are used in the projects documentation or output)
-- [ ] A directory for documentation
-- [ ] Directories for any research materials if appropriate for the project (ethics, data, analysis)
-- [ ] Ready to use [all-contributors](https://allcontributors.org/) bot (installed for the RCM Cooperative GitHub organisation)
-- [ ] Appropriate issue templates
-- [ ] Appropriate .gitignore file
+- [x] A [LICENSE](LICENSE.md) (we suggest MIT for code and CC-BY-4.0 for documentation)
+- [x] A [Code of Conduct](CODE_OF_CONDUCT.md) (we suggest RCM Cooperative CoC)
+- [x] A directory for project management (communications, meetings, reports, proposals)
+- [x] A directory for assets (non-code supporting files such as images, diagrams, templates, and similar media) that are used in the projects documentation or output)
+- [x] A directory for documentation
+- [x] Ready to use [all-contributors](https://allcontributors.org/) bot (installed for the RCM Cooperative GitHub organisation)
+- [x] Appropriate issue templates
+- [x] Appropriate .gitignore file
 - [ ] Connect repo with Zenodo the order of these needs to be reviewed
 - [ ] Add cff file for citation (we suggest creating this with [https://bit.ly/cffinit](https://bit.ly/cffinit))
 - [ ] Add a DOI badge (see the zenodo doi badge widget)
