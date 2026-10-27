@@ -266,12 +266,10 @@ Note we are currently using locally installed all-contributors while this repo i
 
 This repo has been templated from the [RCM Cooperative Partner template repo](https://github.com/rcmcooperative/partner-template), including file structure, starter contents and a Claude Skill to fill in template information.
 
-After running the Claude skill, please review the list below to and check off once completed.
-
 This repo includes:
 
 - [x] A meaningful and accurate README.md
-- [ ] A meaningful and accurate [CONTRIBUTING](CONTRIBUTING.md) file
+- [x] A meaningful and accurate [CONTRIBUTING](CONTRIBUTING.md) file
 - [x] A [LICENSE](LICENSE.md) (we suggest MIT for code and CC-BY-4.0 for documentation)
 - [x] A [Code of Conduct](CODE_OF_CONDUCT.md) (we suggest RCM Cooperative CoC)
 - [x] A directory for project management (communications, meetings, reports, proposals)
@@ -280,6 +278,6 @@ This repo includes:
 - [x] Ready to use [all-contributors](https://allcontributors.org/) bot (installed for the RCM Cooperative GitHub organisation)
 - [x] Appropriate issue templates
 - [x] Appropriate .gitignore file
-- [ ] Connect repo with Zenodo the order of these needs to be reviewed
-- [ ] Add cff file for citation (we suggest creating this with [https://bit.ly/cffinit](https://bit.ly/cffinit))
-- [ ] Add a DOI badge (see the zenodo doi badge widget)
+- [x] Connect repo with Zenodo the order of these needs to be reviewed
+- [x] Add cff file for citation (we suggest creating this with [https://bit.ly/cffinit](https://bit.ly/cffinit))
+- [x] Add a DOI badge (see the zenodo doi badge widget)
