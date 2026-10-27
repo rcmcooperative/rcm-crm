@@ -237,11 +237,17 @@ This project is licensed under the CC-BY-4.0 License for documentation and MIT l
 
 ## Citing & Acknowledgement
 
+If you use or build on the RCM-CRM, please cite it as:
+
+> Gould van Praag, C., Karoune, E., & Sharan, M. (2026). RCM-CRM (v1.0.0). RCM Cooperative. Zenodo. https://doi.org/10.5281/zenodo.23692251
+
+Citation metadata is also available in [`CITATION.cff`](CITATION.cff).
+GitHub's "Cite this repository" button (in the sidebar) will generate APA and BibTeX versions from it.
+
+
 This project builds on the [RCM Cooperative Community Mapping Workflow](https://github.com/rcmcooperative/community-mapping):
 
 > Gould van Praag, C. (2025). RCM Cooperative Community Mapping Workflow (v1.0.0). Zenodo. [https://doi.org/10.5281/zenodo.15320348](https://doi.org/10.5281/zenodo.15320348)
-
-To cite this repository, please use the information in [`CITATION.cff`](CITATION.cff) once it has been added — see the setup checklist below.
 
 This repository builds on the template created and maintained by *The Turing Way* team members and shared under CC-BY 4.0 for reuse: [https://github.com/alan-turing-institute/reproducible-project-template](https://github.com/alan-turing-institute/reproducible-project-template).
 
